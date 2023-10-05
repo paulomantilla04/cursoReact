@@ -46,10 +46,11 @@ button {
   margin: 0.5em;
   background-color: #1a1a1a;
   cursor: pointer;
-  transition: border-color 0.25s;
+  transition: all 0.25s ease;
 }
 button:hover {
-  border-color: #646cff;
+  border-color: #00ff1a;
+  filter: drop-shadow(0 0 0.3em #00ff1e);
 }
 button:focus,
 button:focus-visible {

@@ -4,6 +4,10 @@ import { useState } from "react";
 
 function App() {
 
+  const openInNewTab = url => {
+    window.open(url, '_blank', 'noopener,noreferrer');
+  };
+
   const [estado, setEstado] = useState("Pato");
 
   return (
@@ -30,8 +34,11 @@ function App() {
         }}>
           Alerta
         </button>
-        
-        <Button texto={"Compras"}></Button>
+
+        <button onClick={() => openInNewTab('https://artebymm.com')}>
+          Visita artebymm.com
+        </button>
+  
       </div>
     </>
   );
